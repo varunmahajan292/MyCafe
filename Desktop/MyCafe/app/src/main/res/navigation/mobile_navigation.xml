@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_snack">
+
+    <fragment
+        android:id="@+id/nav_snack"
+        android:name="com.example.mycafe.ui.Snacks.SnacksFragment"
+        android:label="Snacks"
+        tools:layout="">
+
+        <action
+            android:id="@+id/action_HomeFragment_to_HomeSecondFragment"
+            app:destination="@id/nav_home_second" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_home_second"
+        android:name="com.example.mycafe.ui.home.HomeSecondFragment"
+        android:label="@string/home_second"
+        tools:layout="@layout/fragment_home_second">
+        <action
+            android:id="@+id/action_HomeSecondFragment_to_HomeFragment"
+            app:destination="@id/nav_snack" />
+
+        <argument
+            android:name="myArg"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_burger"
+        android:name="com.example.mycafe.ui.Burger.BurgerFragment"
+        android:label="Burger"
+        tools:layout="" />
+    <fragment
+        android:id="@+id/nav_coldbeverages"
+        android:name="com.example.mycafe.ui.ColdBeverage.ColdBeverageFragment"
+        android:label="Cold Beverages"
+        tools:layout="" />
+    <fragment
+        android:id="@+id/nav_hotbeverages"
+        android:name="com.example.mycafe.ui.HotBeverages.HotBeveragesFragment"
+        android:label="Hot Beverages"
+        tools:layout="" />
+    <fragment
+        android:id="@+id/nav_muffins"
+        android:name="com.example.mycafe.ui.Muffins.MuffinsFragment"
+        android:label="Muffins"
+        tools:layout="" />
+    <fragment
+        android:id="@+id/nav_desserts"
+        android:name="com.example.mycafe.ui.Desserts.DessertFragment"
+        android:label="Desserts"
+        tools:layout="" />
+
+</navigation>

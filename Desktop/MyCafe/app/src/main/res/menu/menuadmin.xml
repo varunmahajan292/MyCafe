@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/allorders"
+        android:title="View All Orders"
+         android:orderInCategory="100"
+        app:showAsAction="never" />
+    <item android:id="@+id/allitems"
+        android:title="All Items"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+
+    <item android:id="@+id/snack"
+        android:title="Snacks"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+    <item android:id="@+id/burger"
+    android:title="Burgers"
+    android:orderInCategory="100"
+    app:showAsAction="never" />
+    <item android:id="@+id/coldbeverages"
+        android:title="Cold beverages"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+    <item android:id="@+id/hotbeverages"
+        android:title="Hot beverages"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+    <item android:id="@+id/muffins"
+        android:title="Muffins"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+    <item android:id="@+id/deserts"
+        android:title="Desserts"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+    <item android:id="@+id/Gotouserlogin"
+        android:title="User Login Page"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+    <item android:id="@+id/Logout"
+        android:title="Logout"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+</menu>

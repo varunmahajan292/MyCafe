@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+
+    android:layout_height="wrap_content">
+   <RelativeLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content">
+    <TextView
+    android:id="@+id/orderno"
+    android:text="Order Number: "
+    android:layout_marginTop="10dp"
+    android:textSize="20dp"
+    android:textColor="@color/colorAccent"
+    android:layout_marginLeft="20dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
+    <TextView
+    android:id="@+id/tvorder"
+    android:text=" 1 "
+    android:layout_toRightOf="@id/orderno"
+    android:layout_marginTop="10dp"
+    android:textSize="20dp"
+    android:textColor="@color/colorAccent"
+    android:layout_marginLeft="65dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/customername"
+        android:text="Customer Name: "
+        android:layout_below="@id/orderno"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:textColor="@color/colorAccent"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tvname"
+        android:text=" Arzoo Arzoo "
+        android:layout_toRightOf="@id/customername"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/orderno"
+        android:textSize="20dp"
+        android:textColor="@color/colorAccent"
+        android:layout_marginLeft="45dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/amountTaken"
+        android:text="Order Status: "
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:layout_below="@id/customername"
+        android:textColor="@color/colorAccent"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tvstatus"
+        android:text=" Unserved"
+        android:layout_toRightOf="@id/amountTaken"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/customername"
+        android:textSize="20dp"
+        android:textColor="@color/colorAccent"
+        android:layout_marginLeft="80dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/ordertime"
+        android:text="Receiving Time: "
+        android:layout_below="@id/amountTaken"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:textColor="@color/colorAccent"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tvtime"
+        android:text="1:30"
+        android:layout_toRightOf="@id/ordertime"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/amountTaken"
+        android:textSize="20dp"
+        android:textColor="@color/colorAccent"
+        android:layout_marginLeft="55dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+       <Button
+           android:id="@+id/viewdetails"
+           android:layout_below="@+id/ordertime"
+           android:layout_width="match_parent"
+           android:layout_marginLeft="20dp"
+           android:layout_marginTop="10dp"
+           android:background="@color/colorAccent"
+           android:textColor="@color/colorwhite"
+           android:text="View Details"
+           android:layout_marginRight="20dp"
+           android:layout_height="wrap_content"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_below="@+id/viewdetails"
+        android:layout_marginTop="5dp"
+        android:layout_height="1dp"
+        android:background="@color/colorgrey"
+        android:layout_marginBottom="5dp"/>
+   </RelativeLayout>
+</LinearLayout>
